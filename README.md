@@ -1,36 +1,31 @@
+# 🅿️ Parking Lot Management System
 
----
+A full-stack web application for managing parking lots, tracking available spots, issuing tickets for vehicle entry/exit, and monitoring day-to-day operations via a web dashboard.
 
-## 🟩 Backend `README.md`  
-**`parking-lot-management-system/backend/README.md`**
-
-```md
-# 🟩 Parking Lot Backend (NestJS)
-
-This is the backend API for the Parking Lot Management System.  
-It provides REST endpoints for authentication, parking lot management, spot allocation, ticketing, and operational workflows.
+This project is built as a practical system design exercise, focusing on clean API design, database modeling, and full-stack integration.
 
 ## 🚀 Features
-- User authentication and authorization (JWT)
-- CRUD APIs for parking lots and parking spots
-- Vehicle entry and exit workflows
-- Ticket generation and fee calculation logic
-- Input validation and error handling
-- API documentation (Swagger)
+- User authentication (admin / staff)
+- Parking lot and spot management
+- Vehicle entry and exit with ticket generation
+- Real-time or near real-time availability tracking
+- Admin dashboard for monitoring operations
 
 ## 🧱 Tech Stack
-- Framework: NestJS (TypeScript)
-- Database: PostgreSQL
-- ORM: Prisma
-- Auth: JWT + bcrypt
+**Backend**
+- NestJS (TypeScript)
+- PostgreSQL
+- Prisma ORM
+- JWT Authentication
 
-## 📂 Structure
+**Frontend**
+- React + TypeScript
+- Tailwind CSS
+- REST API integration
+
+## 📂 Project Structure
 ```txt
-backend/
-├── src/
-│   ├── auth/
-│   ├── parking/
-│   ├── tickets/
-│   └── main.ts
-├── prisma/
+parking-lot-management-system/
+├── backend/     # NestJS API
+├── frontend/    # React web dashboard
 └── README.md
